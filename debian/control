@@ -1,0 +1,20 @@
+Source: libtest-timer-perl
+Section: perl
+Priority: optional
+Maintainer: Gasol Wu <gasol.wu@gmail.com>
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl,
+ perl (>= 5.10.1) | libtest-simple-perl (>= 0.88),
+ liberror-perl,
+ libfile-spec-perl,
+ libtest-exception-perl,
+ libtest-tester-perl
+Standards-Version: 3.9.3
+Homepage: http://search.cpan.org/dist/Test-Timer/
+
+Package: libtest-timer-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: a test module to test/assert response times
+ Test::Timer implements a set of test primitives to test and assert test times
+ from bodies of code.
